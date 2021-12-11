@@ -163,7 +163,7 @@ section h2 {
 @media (max-width: 600px) {
   .menu-flutuante ul {
     justify-content: space-evenly;
-    width: 95vw;
+    width: 97vw;
   }
   .menu-flutuante ul li {
     padding: 0px;

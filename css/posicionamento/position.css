@@ -1,0 +1,171 @@
+body {
+  margin-bottom: 60px;
+}
+.conteiner {
+  margin: 0 40px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+nav ul {
+  display: flex;
+}
+
+.menu-flutuante,
+.menu-flutuante ul {
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  justify-content: space-between;
+  width: 98vw;
+  z-index: 1;
+  background: var(--color-0);
+  align-items: center;
+}
+
+.menu-flutuante ul::before {
+  content: "";
+  width: 100vw;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    var(--color-c),
+    var(--color-m),
+    var(--color-y)
+  );
+  background-repeat: repeat;
+  position: absolute;
+  margin-bottom: 52px;
+}
+
+.menu-flutuante ul li {
+  padding: 0px 10px;
+}
+
+.detalhe {
+  width: 100%;
+  margin: 0px;
+}
+
+.sobremim {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.formacao,
+.portifolio,
+.habilidades,
+.contato {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+section h2 {
+  justify-self: end;
+}
+
+.form-grid,
+.port-grid {
+  display: grid;
+  grid-column: 1/-1;
+}
+
+.form-grid {
+  gap: 20px 0px;
+}
+
+.form-grid li:nth-child(even) {
+  justify-self: end;
+}
+
+.port-grid p a {
+  display: flex;
+  align-items: center;
+}
+.port-grid p img {
+  margin-left: 10px;
+}
+
+.elem-hab::before {
+  content: "";
+  height: 160px;
+  width: 4px;
+  background: linear-gradient(
+    0deg,
+    var(--color-c),
+    var(--color-m),
+    var(--color-y)
+  );
+  position: absolute;
+}
+
+.habil-grid {
+  display: grid;
+  grid-column: 1/-1;
+  grid-template-columns: 1fr 4px 1fr;
+}
+
+.habil-grid ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.habil-grid ul h3 {
+  text-align: center;
+  margin: 0px;
+}
+
+.habil-grid ul div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px 0;
+}
+
+.habil-grid ul div li:nth-child(even) {
+  justify-self: end;
+}
+
+.habil-grid ul div li:nth-child(odd) {
+  justify-self: start;
+}
+
+.text-ul {
+  margin: 10px 0 !important;
+}
+
+.item-2 {
+  text-align: end;
+}
+
+.contato a {
+  text-align: end;
+}
+
+.sub-b,
+.sub-m {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 500px) {
+  .menu-flutuante ul::before {
+    width: 300vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu-flutuante ul {
+    justify-content: space-evenly;
+    width: 95vw;
+  }
+  .menu-flutuante ul li {
+    padding: 0px;
+  }
+}

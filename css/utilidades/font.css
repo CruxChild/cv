@@ -1,0 +1,65 @@
+/*
+font-family: "Montserrat Alternates", sans-serif;
+font-family: "Source Code Pro", monospace;
+*/
+
+/*titulos*/
+
+.title-b {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.title-m {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.sub-b {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.sub-m {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/*Texto em geral*/
+
+.text-l-b {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.text-l-m {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.text-b {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.text-m {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+p,
+li,
+ul,
+.contato a {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1rem;
+  font-weight: 500;
+}

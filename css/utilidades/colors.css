@@ -1,0 +1,129 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-0: #fafafa;
+    --color-1: #f6f6f6;
+    --color-2: #323232;
+    --color-3: #272727;
+    --color-b: #000000;
+    --color-w: #ffffff;
+    --color-c: #22f2f2;
+    --color-cl: #dcffff;
+    --color-m: #f25270;
+    --color-ml: #ffcdd6;
+    --color-y: #ffff23;
+    --color-yl: #ffffbe;
+    --grad-0: linear-gradient(var(--color-0), var(--color-w));
+    --grad-1: linear-gradient(var(--color-1), var(--color-w));
+    --grad-c: linear-gradient(var(--color-c), var(--color-cl));
+    --grad-m: linear-gradient(var(--color-m), var(--color-ml));
+    --grad-l: linear-gradient(var(--color-y), var(--color-yl));
+    --shadow-p-b: 0px 0px 5px var(--color-b);
+    --shadow-p-c: 0px 0px 5px var(--color-c);
+    --shadow-p-m: 0px 0px 5px var(--color-m);
+  }
+  .dark {
+    display: none;
+  }
+
+  .invert {
+    filter: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-0: #323232;
+    --color-1: #272727;
+    --color-2: #fafafa;
+    --color-3: #f6f6f6;
+    --color-b: #c4c4c4;
+    --color-w: #464646;
+    --color-c: #22f2f2;
+    --color-cl: #dcffff;
+    --color-m: #f25270;
+    --color-ml: #ffcdd6;
+    --color-y: #ffff23;
+    --color-yl: #ffffbe;
+    --grad-0: linear-gradient(var(--color-0), var(--color-w));
+    --grad-1: linear-gradient(var(--color-1), var(--color-w));
+    --grad-c: linear-gradient(var(--color-c), var(--color-cl));
+    --grad-m: linear-gradient(var(--color-m), var(--color-ml));
+    --grad-l: linear-gradient(var(--color-y), var(--color-yl));
+    --shadow-p-b: 0px 0px 5px var(--color-b);
+    --shadow-p-c: 0px 0px 5px var(--color-c);
+    --shadow-p-m: 0px 0px 5px var(--color-m);
+  }
+  .light {
+    display: none;
+  }
+
+  body {
+    background: var(--color-0);
+  }
+
+  .invert {
+    filter: invert();
+  }
+
+  p,
+  a,
+  li,
+  ul {
+    color: var(--color-3);
+  }
+}
+
+.color-0 {
+  color: var(--color-0);
+}
+
+.color-1 {
+  color: var(--color-1);
+}
+
+.color-2 {
+  color: var(--color-2);
+}
+
+.color-3 {
+  color: var(--color-3);
+}
+
+.color-c {
+  color: var(--color-c);
+}
+
+.color-m {
+  color: var(--color-m);
+}
+
+.color-y {
+  color: var(--color-y);
+}
+
+.color-title {
+  color: var(--color-c);
+}
+
+.color-sub {
+  color: var(--color-m);
+}
+
+.bground-0 {
+  background: var(--grad-0);
+}
+
+.bground-1 {
+  background: var(--grad-1);
+}
+
+.detalhe {
+  width: 375px;
+  height: 4px;
+  background: linear-gradient(
+    90deg,
+    var(--color-c),
+    var(--color-m),
+    var(--color-y)
+  );
+}

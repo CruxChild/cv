@@ -1,0 +1,27 @@
+@media (max-width: 500px) {
+  .menu-flutuante ul::before {
+    animation: animate 2s linear infinite;
+  }
+
+  @keyframes animate {
+    0% {
+      transform: translatex(-100vw);
+    }
+
+    50% {
+      transform: translatex(100vw);
+    }
+
+    100% {
+      transform: translatex(-100vw);
+    }
+
+    50% {
+      transform: translatex(100vw);
+    }
+
+    0% {
+      transform: translatex(-100vw);
+    }
+  }
+}

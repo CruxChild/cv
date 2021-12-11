@@ -1,0 +1,15 @@
+/* Reset*/
+@import url(reset.css);
+
+/*Utilidades*/
+@import url(./utilidades/font.css);
+@import url(./utilidades/colors.css);
+
+/*Posicionamento*/
+@import url(./posicionamento/position.css);
+
+/*background*/
+@import url(./posicionamento/background.css);
+
+/*Animacao*/
+@import url(./animation/animation.css);

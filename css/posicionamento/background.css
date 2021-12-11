@@ -1,0 +1,23 @@
+@media (prefers-color-scheme: dark) {
+  .graf {
+    background-image: url(../../img/darkback.svg);
+    background-position: center;
+    background-repeat: repeat;
+    position: static;
+    height: 135px;
+    margin-top: -126px;
+    z-index: -1;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .graf {
+    background-image: url(../../img/lightback.svg);
+    background-position: center;
+    background-repeat: repeat;
+    position: static;
+    height: 135px;
+    margin-top: -126px;
+    z-index: -1;
+  }
+}

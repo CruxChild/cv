@@ -15,17 +15,44 @@ nav ul {
   display: flex;
 }
 
+.icons {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-top: -125px;
+}
+
+.icons div {
+  align-self: center;
+  justify-self: center;
+}
+
+.icon-item-1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.icon-item-2 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.icon-item-3 {
+  grid-column: 6;
+  grid-row: 1/-1;
+}
+
 .menu-flutuante,
 .menu-flutuante ul {
-  display: flex;
   position: fixed;
   bottom: 0px;
   left: 0px;
-  justify-content: space-between;
-  width: 98vw;
+  justify-content: space-evenly;
+  width: 99vw;
   z-index: 1;
   background: var(--color-0);
-  align-items: center;
+  align-items: flex-start;
+  gap: top 5px;
 }
 
 .menu-flutuante ul::before {
@@ -40,7 +67,6 @@ nav ul {
   );
   background-repeat: repeat;
   position: absolute;
-  margin-bottom: 52px;
 }
 
 .menu-flutuante ul li {
@@ -95,10 +121,10 @@ section h2 {
 
 .elem-hab::before {
   content: "";
-  height: 160px;
+  height: 124px;
   width: 4px;
   background: linear-gradient(
-    0deg,
+    180deg,
     var(--color-c),
     var(--color-m),
     var(--color-y)
@@ -130,6 +156,7 @@ section h2 {
 
 .habil-grid ul div li:nth-child(even) {
   justify-self: end;
+  /* margin-right: 10px; */
 }
 
 .habil-grid ul div li:nth-child(odd) {
@@ -144,6 +171,14 @@ section h2 {
   text-align: end;
 }
 
+.item-1-design:nth-child(even) {
+  margin-right: 5px;
+}
+
+.item-2-design {
+  margin-left: 5px;
+}
+
 .contato a {
   text-align: end;
 }
@@ -154,6 +189,16 @@ section h2 {
   justify-content: center;
 }
 
+.telegram {
+  margin: 0 4px;
+}
+
+@media (max-width: 400px) {
+  .menu-flutuante ul {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 500px) {
   .menu-flutuante ul::before {
     width: 300vw;
@@ -162,7 +207,6 @@ section h2 {
 
 @media (max-width: 600px) {
   .menu-flutuante ul {
-    justify-content: space-evenly;
     width: 97vw;
   }
   .menu-flutuante ul li {

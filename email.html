@@ -17,7 +17,44 @@
 </head>
 
 <body>
-    <h1 class='text-l-b'>Email Formulário</h1>
+    <section class='formulario'>
+        <h1 class='title-b color-2'>O que deseja?</h1>
+
+
+        <form action="#">
+            <div>
+                <label class='text-l-b color-2' for="nome">Nome</label>
+                <input class='text-l-m' type="text" id="nome" name="nome" placeholder="Seu nome" autofocus required>
+            </div>
+
+            <div>
+                <label class='text-l-b color-2' for="nome">Empresa</label>
+                <input class='text-l-m ' type="text" id="nome" name="nome" placeholder="Razão Social">
+            </div>
+
+            <div>
+                <label class='text-l-b color-2' for="telefone">Telefone</label>
+                <input class='text-l-m' type="text" id="telefone" name="telefone" placeholder="+55 11 99999-9999" required>
+            </div>
+
+            <div>
+                <label class='text-l-b color-2' for="email">Email</label>
+                <input class='text-l-m' type="email" id="email" name="email" placeholder="contato@email.com" required>
+            </div>
+
+            <div>
+                <label class='text-l-b color-2' for="mensagem">Mensagem</label>
+                <textarea class='text-l-m' rows="3" id="mensagem" name="mensagem" placeholder="O que deseja?" required></textarea>
+            </div>
+
+            <div class='botao'>
+                <!-- <img src="img/back.svg" alt="">  -->
+                <a href="enIndex.html"> <img src="img/back.svg" alt=""> </a>
+                <button class='text-l-b color-2'>Enviar Email</button>
+            </div>
+        </form>
+    </section>
+    <script src='js/script.js'></script>
 </body>
 
 </html>

@@ -17,7 +17,45 @@
 </head>
 
 <body>
-    <h1 class='.text-l-b'>Form Email</h1>
+    <section class='formulario'>
+        <h1 class='title-b color-2'>What do you Want?</h1>
+
+
+        <form action="#">
+            <div>
+                <label class='text-l-b color-2' for="nome">Name</label>
+                <input class='text-l-m' type="text" id="nome" name="nome" placeholder="Your Name" autofocus required>
+            </div>
+
+            <div>
+                <label class='text-l-b color-2' for="nome">Company</label>
+                <input class='text-l-m' type="text" id="nome" name="nome" placeholder="Company Name">
+            </div>
+
+            <div>
+                <label class='text-l-b color-2' for="telefone">Phone</label>
+                <input class='text-l-m' type="text" id="telefone" name="telefone" placeholder="Put international code" required>
+            </div>
+
+            <div>
+                <label class='text-l-b color-2' for="email">Email</label>
+                <input class='text-l-m' type="email" id="email" name="email" placeholder="contact@email.com" required>
+            </div>
+
+            <div>
+                <label class='text-l-b color-2' for="mensagem">Message</label>
+                <textarea class='text-l-m' rows="3" id="mensagem" name="mensagem" placeholder="What do you want?" required></textarea>
+            </div>
+
+            <div class='botao'>
+                <a href="enIndex.html"> <img src="img/back.svg" alt=""> </a>
+                <button class='text-l-b color-2'>Send Email</button>
+            </div>
+
+        </form>
+    </section>
+
+    <script src='js/script.js'></script>
 </body>
 
 </html>

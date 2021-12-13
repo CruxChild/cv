@@ -116,7 +116,7 @@ section h2 {
   align-items: center;
 }
 .port-grid p img {
-  margin-left: 10px;
+  margin: 0 10px;
 }
 
 .elem-hab::before {

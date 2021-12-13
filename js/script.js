@@ -1,3 +1,4 @@
+//Scroll Suave
 function initScroll() {
   const menuJsHome = document.querySelectorAll(".menuJsHome a");
 

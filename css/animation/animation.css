@@ -25,3 +25,15 @@
     }
   }
 }
+
+.js .jsMenu {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.5s;
+}
+
+.js .jsMenu.menuAtivo {
+  opacity: 1;
+  transition: 0.5s;
+  transform: translate3d(0, 0, 0);
+}

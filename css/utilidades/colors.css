@@ -127,3 +127,10 @@
     var(--color-y)
   );
 }
+
+.linkBox {
+  background: var(--color-0);
+}
+.linkBox a:hover {
+  background: var(--color-1);
+}

@@ -11,8 +11,8 @@ function initScroll() {
       top: topo,
       behavior: "smooth",
     });
+    console.log(topo);
   }
-
   menuJsHome.forEach((item) => {
     item.addEventListener("click", scrollToSection);
   });
@@ -24,7 +24,6 @@ initScroll();
 
 function InitAnimaScrolls() {
   const menu = document.querySelectorAll(".jsMenu");
-  console.log(menu);
 
   if (menu.length) {
     const menuMetade = window.innerHeight * 0.75;
@@ -46,3 +45,19 @@ function InitAnimaScrolls() {
 }
 
 InitAnimaScrolls();
+
+//menu Oculto com links do site
+
+function InitMenuOculto() {
+  const menuOculto = document.querySelector(".linkBox");
+  const unico = document.querySelector(".unico");
+
+  function clickAction(e) {
+    e.preventDefault();
+    menuOculto.classList.toggle("close");
+  }
+
+  window.addEventListener("click", clickAction);
+}
+
+InitMenuOculto();

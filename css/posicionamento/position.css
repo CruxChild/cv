@@ -193,6 +193,36 @@ section h2 {
   margin: 0 4px;
 }
 
+.linkBox {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  max-width: 70%;
+  margin: 0 auto;
+  border: 1px solid;
+  z-index: 1;
+  position: fixed;
+  bottom: 55px;
+  right: 5px;
+}
+
+.linkBox li {
+  display: flex;
+  padding: 5px;
+  width: 100%;
+  justify-content: center;
+}
+
+.linkBox a {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.close {
+  display: flex;
+}
+
 @media (max-width: 400px) {
   .menu-flutuante ul {
     justify-content: center;

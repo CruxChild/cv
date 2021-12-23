@@ -11,8 +11,8 @@ function initScroll() {
       top: topo,
       behavior: "smooth",
     });
-    console.log(topo);
   }
+
   menuJsHome.forEach((item) => {
     item.addEventListener("click", scrollToSection);
   });
@@ -46,18 +46,18 @@ function InitAnimaScrolls() {
 
 InitAnimaScrolls();
 
-//menu Oculto com links do site
+// //menu Oculto com links do site
 
-function InitMenuOculto() {
+function initMenuOculto() {
   const menuOculto = document.querySelector(".linkBox");
   const unico = document.querySelector(".unico");
 
-  function clickAction(e) {
-    e.preventDefault();
+  function clickAction(event) {
+    event.preventDefault();
     menuOculto.classList.toggle("close");
   }
 
-  window.addEventListener("click", clickAction);
+  unico.addEventListener("click", clickAction);
 }
 
-InitMenuOculto();
+initMenuOculto();

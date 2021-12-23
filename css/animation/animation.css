@@ -37,15 +37,3 @@
   transition: 0.5s;
   transform: translate3d(0, 0, 0);
 }
-
-.linkBox {
-  opacity: 0;
-  transform: translate3d(30px, 40px, 0);
-  transition: 3s;
-}
-
-.linkBox.close {
-  opacity: 1;
-  transition: 3s;
-  transform: translate3d(0, 0, 0);
-}

@@ -54,6 +54,7 @@ function initMenuOculto() {
 
   function clickAction(event) {
     event.preventDefault();
+    menuOculto.classList.toggle("open");
     menuOculto.classList.toggle("close");
   }
 

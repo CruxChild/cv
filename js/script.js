@@ -55,7 +55,12 @@ function initMenuOculto() {
   function clickAction(event) {
     event.preventDefault();
     menuOculto.classList.toggle("open");
-    menuOculto.classList.toggle("close");
+    const open = document.querySelector(".open");
+    if (open) {
+      menuOculto.classList.remove("close");
+    } else {
+      menuOculto.classList.add("close");
+    }
   }
 
   unico.addEventListener("click", clickAction);
